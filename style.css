@@ -1,0 +1,38 @@
+body {
+    padding: 100px;
+}
+
+.login-box {
+    margin-top: 50px;
+    box-shadow: 5px 5px 10px grey;
+    border-radius: 5px;
+    padding: 40px;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=button]:focus {
+    border-color: darkgray;
+    box-shadow: none;
+}
+
+#dashboard-area{
+    display: none;
+}
+
+.deposit {
+    background-color: red;
+}
+
+.withdraw {
+    background-color: green;
+}
+
+.balance {
+    background-color: black;
+}
+
+.status {
+    color: white;
+    padding: 45px;
+    margin: 0 35px;
+    border-radius: 5px;
+}
