@@ -10,7 +10,7 @@
 <body>
     <div id="login-area">
         <h1 class="text-center">Welcome to Dynamic Banking</h1>
-        <div class="login-box">
+        <div class="login-box box-style">
             <h4>Login</h4>
             <input class="form-control" type="text" name="email" placeholder="Email">
             <br>
@@ -26,36 +26,44 @@
             <div class="col-md-4">
                 <div class="deposit status">
                     <h5>Deposit</h5>
-                    <h2>$00</h2>
+                    <h2>$<span id="currentDeposite">00</span></h2>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="withdraw status">
                     <h5>Withdraw</h5>
-                    <h2>$00</h2>
+                    <h2>$ <span id="currentWithdraw">00</span></h2>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="balance status">
                     <h5>Balance</h5>
-                    <h2>$1240</h2>
+                    <h2>$<span id="currentBalance">1240</span></h2>
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="box-style">
+                    <h4>Deposite</h4>
+                    <input id="addAmount" placeholder="type the amount you want to deposite" class="form-control" type="text">
+                    <br>
+                    <button id="addDeposite" class="btn btn-success">Deposite</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="box-style">
+                    <h4>Withdraw</h4>
+                    <input id="withdrawAmount" type="text" class="form-control" placeholder="type the amount you want to withdraw">
+                    <br>
+                    <button id="addWithdraw" class="btn btn-success">Withdraw</button>
+                </div>
+        </div>
     </div>
-
-    <script>
-        const loginBtn = document.getElementById("login")
-        loginBtn.addEventListener("click", function(){
-            const loginArea = document.getElementById("login-area")
-            loginArea.style.display = "none"
-            const dasArea = document.getElementById("dashboard-area")
-                dasArea.style.display = "block"
-        })
-    </script>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script src="script.js"></script>
 </body>
 </html>
