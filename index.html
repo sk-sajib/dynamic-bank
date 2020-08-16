@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,62 +9,67 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+
     <div id="login-area">
-        <h1 class="text-center">Welcome to Dynamic Banking</h1>
-        <div class="login-box box-style">
-            <h4>Login</h4>
-            <input class="form-control" type="text" name="email" placeholder="Email">
+        <h1 class="text-center">Welcome to Dynamic Online Banking system</h1>
+        <div class="submitted-area">
+            <h3>Login</h3>
+            <input type="email" class="form-control">
             <br>
-            <input class="form-control" type="password" name="password" placeholder="Password">
+            <input type="password" class="form-control">
             <br>
-            <button id="login" type="button" class="btn-lg btn btn-success">Enter</button>
+            <button id='login' class="btn btn-success">Login</button>
         </div>
     </div>
 
 
-    <div id="dashboard-area">
+    <div id="transaction-area">
         <div class="row">
             <div class="col-md-4">
                 <div class="deposit status">
-                    <h5>Deposit</h5>
-                    <h2>$<span id="currentDeposite">00</span></h2>
+                    <h4>Deposit</h4>
+                    <h2>$<span id='currentDeposit'>00</span></h2>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="withdraw status">
-                    <h5>Withdraw</h5>
-                    <h2>$ <span id="currentWithdraw">00</span></h2>
+                    <h4>withdraw</h4>
+                    <h2>$ <span id='currentWithdraw'>00</span></h2>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="balance status">
-                    <h5>Balance</h5>
-                    <h2>$<span id="currentBalance">1240</span></h2>
+                <div class="Balance status">
+                    <h4>Balance</h4>
+                    <h2>$ <span id='currentBalance'>1240</span></h2>
                 </div>
             </div>
         </div>
+
         <div class="row">
             <div class="col-md-6">
-                <div class="box-style">
-                    <h4>Deposite</h4>
-                    <input id="addAmount" placeholder="type the amount you want to deposite" class="form-control" type="text">
+                <div class="submitted-area">
+                    <h3>Deposit</h3>
+                    <input id='depositAmount' type="text" class="form-control" placeholder="type the amount want to deposit">
                     <br>
-                    <button id="addDeposite" class="btn btn-success">Deposite</button>
+                    <button id='addDeposit' class="btn btn-success">Deposit</button>
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="box-style">
-                    <h4>Withdraw</h4>
-                    <input id="withdrawAmount" type="text" class="form-control" placeholder="type the amount you want to withdraw">
+                <div class="submitted-area">
+                    <h3>Withdraw</h3>
+                    <input id='withdrawAmount' type="text" class="form-control" placeholder="type the amount want to deposit">
                     <br>
-                    <button id="addWithdraw" class="btn btn-success">Withdraw</button>
+                    <button id='addwithDraw' class="btn btn-success">Withdraw</button>
                 </div>
+            </div>
         </div>
+
     </div>
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>
-<script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+    <script src="script.js"></script>
 </body>
 </html>
